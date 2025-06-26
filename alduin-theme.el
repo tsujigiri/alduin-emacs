@@ -32,9 +32,10 @@
  (custom-theme-set-faces
   'alduin
   ;;;; default
-  `(default ((t (:foreground ,alduin-fg :background ,alduin-bg))))
+  `(default ((t (:foreground ,alduin-fg :background ,alduin-black))))
   ;;;; strings
-  `(font-lock-string-face ((t (:foreground ,alduin-white-bright))))
+  `(font-lock-string-face ((t (:foreground ,alduin-white-bright
+                               :background ,alduin-black-alt))))
   ;;;; functions
   `(font-lock-function-name-face ((t (:foreground ,alduin-magenta))))
   ;;;; constants
@@ -60,7 +61,9 @@
   ;;;; magit
   `(magit-section-highlight ((t (:background ,alduin-black-alt))))
   `(magit-diff-file-heading-highlight ((t (:background ,alduin-black-alt))))
-  `(magit-diff-context-highlight ((t (:background ,alduin-black-alt))))))
+  `(magit-diff-context-highlight ((t (:background ,alduin-black-alt))))
+  ;;;; links
+  `(link ((t (:foreground ,alduin-magenta))))))
 
 ;;;###autoload
 (and load-file-name
