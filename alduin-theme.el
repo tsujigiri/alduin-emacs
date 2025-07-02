@@ -60,9 +60,16 @@
   `(font-lock-keyword-face ((t (:foreground ,grey))))
   ;;;; variables
   `(font-lock-variable-name-face ((t (:foreground ,cyan))))
+  `(font-lock-constant-face ((t (:foreground ,soft-red))))
   ;;;; mode line
-  `(mode-line ((t (:foreground ,alduin-bg :background ,green :box t :overline nil))))
-  `(mode-line-inactive ((t (:foreground ,green :background ,alduin-bg :box t :overline nil))))
+  `(mode-line ((t (:foreground ,green
+                   :background ,alduin-bg
+                   :box t
+                   :overline nil))))
+  `(mode-line-inactive ((t (:foreground ,grey
+                            :background ,alduin-bg
+                            :box t
+                            :overline nil))))
   ;;;; fringe
   `(fringe ((t (:background ,alduin-black))))
   ;;;; hl line
