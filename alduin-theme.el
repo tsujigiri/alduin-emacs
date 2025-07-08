@@ -62,12 +62,17 @@
   `(font-lock-variable-name-face ((t (:foreground ,cyan))))
   `(font-lock-constant-face ((t (:foreground ,soft-red))))
   ;;;; mode line
-  `(mode-line ((t (:foreground ,green
-                   :background ,alduin-bg
+  `(mode-line ((t (:foreground "#949494"
+                   :background "#080808"
                    :box t
                    :overline nil))))
-  `(mode-line-inactive ((t (:foreground ,grey
-                            :background ,alduin-bg
+  `(mode-line-emphasis ((t (:foreground ,alduin-bg
+                            :background ,dark-grey
+                            :box t
+                            :overline nil
+                            :weight bold))))
+  `(mode-line-inactive ((t (:foreground "#626262"
+                            :background "#080808"
                             :box t
                             :overline nil))))
   ;;;; fringe
@@ -89,7 +94,9 @@
   `(line-number ((t (:foreground ,dark-grey
                      :background ,alduin-bg))))
   `(isearch ((t (:foreground ,soft-yellow
-                 :background ,soft-red))))))
+                 :background ,soft-red))))
+  `(show-paren-match ((t (:foreground ,alduin-black :background ,grey))))
+  `(region ((t (:foreground ,soft-yellow :background ,dark-grey))))))
 
 ;;;###autoload
 (and load-file-name
