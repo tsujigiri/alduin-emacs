@@ -96,7 +96,8 @@
   `(isearch ((t (:foreground ,soft-yellow
                  :background ,soft-red))))
   `(show-paren-match ((t (:foreground ,alduin-black :background ,grey))))
-  `(region ((t (:foreground ,soft-yellow :background ,dark-grey))))))
+  `(region ((t (:foreground ,soft-yellow :background ,dark-red))))
+  `(evil-ex-lazy-highlight ((t (:foreground ,soft-yellow :background ,dark-red))))))
 
 ;;;###autoload
 (and load-file-name
